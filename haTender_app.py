@@ -84,7 +84,7 @@ if category_filter:
 # Display filtered contractor list
 st.subheader("Contractor List")
 st.write(f"Total Contractors: {len(filtered_df)}")
-st.dataframe(filtered_df[["Contractor(s) & Address(es)", "Hospital", "Category", "Estimated Contract Amount"]])
+st.dataframe(filtered_df[["Contractor(s) & Address(es)","Subject", "Hospital", "Category", "Estimated Contract Amount"]])
 
 # Download Button for Filtered Contractor List
 st.download_button(
@@ -93,3 +93,5 @@ st.download_button(
     file_name="filtered_contractor_list.csv",
     mime="text/csv"
 )
+
+# Barchart of the filtered contractor 
