@@ -42,11 +42,11 @@ Python 3.x installed on your system.
 ## Code Explanation
 
 ### Data Cleaning and Processing
-1. ***Data Loading***:  Reads the haTender.csv file from the Data folder.
-2. ***Column Renaming***: Renames columns to standardize the format.
-3. ***Row and NA Removal***: Drops irrelevant rows and rows with missing values in the "Subject" column.
-4. ***Filtering and Category Assignment***: Defines keyword-based conditions to categorize tenders automatically (e.g., Pharma, Device, Testing).
-5. ***Separate DataFrames***: Creates filtered DataFrames for specific categories for ease of analysis.
+1. **Data Loading**:  Reads the haTender.csv file from the Data folder.
+2. **Column Renaming**: Renames columns to standardize the format.
+3. **Row and NA Removal**: Drops irrelevant rows and rows with missing values in the "Subject" column.
+4. **Filtering and Category Assignment**: Defines keyword-based conditions to categorize tenders automatically (e.g., Pharma, Device, Testing).
+5. **Separate DataFrames**: Creates filtered DataFrames for specific categories for ease of analysis.
 
 ### Streamlit Dashboard
 1. **Filters**: Sidebar filters for selecting specific hospitals and categories.
