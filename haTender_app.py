@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 # %% [markdown]
 # ## Data Cleaning
@@ -95,3 +96,22 @@ st.download_button(
 )
 
 # Barchart of the filtered contractor 
+contractor_count = filtered_df.groupby('Contractor(s) & Address(es)').size().reset_index(name = 'Counts')
+# Function to truncate labels to the first 4 words
+def truncate_label(label):
+    words = label.split()
+    return ' '.join(words[:4])  # Join the first 4 words
+
+# Apply the function to the 'Contractor(s) & Address(es)' column
+contractor_count['Truncated Contractor'] = contractor_count['Contractor(s) & Address(es)'].apply(truncate_label)
+
+# Barchart of the filtered contractor 
+fig1 = px.bar(contractor_count, x='Truncated Contractor', y='Counts',
+               title="Contractor Distribution")
+
+# Update layout to rotate x-axis labels
+fig1.update_layout(
+    xaxis_tickangle=-40  # Rotate x-axis labels by -40 degrees
+)
+
+st.plotly_chart(fig1)
