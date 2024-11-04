@@ -113,5 +113,4 @@ fig1 = px.bar(contractor_count, x='Truncated Contractor', y='Counts',
 fig1.update_layout(
     xaxis_tickangle=-40  # Rotate x-axis labels by -40 degrees
 )
-
 st.plotly_chart(fig1)
