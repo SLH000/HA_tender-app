@@ -1,4 +1,4 @@
-# HK HA Tender Award App
+# HK HA Tender Contract 
 
 This project leverages Streamlit to build an interactive web app for analyzing and visualizing hospital tender data from Hong Kong's Hospital Authority (HK HA). It scrapes HTML tables, cleans the data, categorizes contractors, and provides filtering options for users. The data is presented with a table and a bar chart to show contractor distribution. Users can also download the filtered contractor list.
 
