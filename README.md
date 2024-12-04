@@ -27,6 +27,8 @@ You can install the required libraries with:
 ```bash
 pip install streamlit pandas requests beautifulsoup4 numpy plotly
 
+```
+
 ## File Structure
 
 - **app.py:** The main Streamlit app script that processes the data and displays it.
@@ -42,10 +44,14 @@ Install the required dependencies by running:
 ```bash
 pip install -r requirements.txt
 
+```
+
 Run the Streamlit app by executing the following command:
 
 ```bash
 streamlit run app.py
+
+```
 
 ### Key Sections in the README.md:
 
